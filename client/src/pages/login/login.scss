@@ -1,0 +1,136 @@
+.login {
+    $color-modal: linear-gradient(90deg, rgba(0, 1, 30, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+
+    .card {
+        margin: 0;
+        padding: 0;
+        width: 80%;
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 400px;
+
+        .left {
+            flex: 1;
+            background: linear-gradient(rgba(0, 1, 30, 0.7), rgba(0, 0, 0, 0.7)), url("https://www.informador.mx/__export/1670696558648/sites/elinformador/img/2022/12/10/fjjsn1uwaaia6jl_crop1670696539577.jpg_423682103.jpg") center;
+            background-size: cover;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: white;
+
+            h1 {
+                font-size: 50px;
+                line-height: 30px;
+                margin: auto;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            span {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            button {
+                background-color: rgba(255, 205, 0, 1);
+                color: black;
+                width: 50%;
+                border: none;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .right {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: center;
+
+            h1 {
+                color: #000;
+                text-align: center;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding: 20px 10px;
+                    border-radius: 10px;
+                }
+
+                button {
+                    justify-content: center;
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: rgba(0, 1, 30, 1);
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    position: relative;
+                    right: -65px;
+                }
+                .alert {
+                    padding: 10px;
+                    background-color: #f44336;
+                    color: white;
+                    margin-bottom: 15px;
+                    border-radius: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login {
+        top: 20px;
+        margin: 0;
+        padding: 0;
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            .left{
+                border-radius: 10px;
+                p {
+                    text-align: justify;
+                }
+                h1{
+                    position: relative;
+                    right: 25px;
+                }
+            }
+            .right{
+                margin: auto;
+                
+                form{
+                    button{
+                        right: -44px;
+                    }
+                }
+            }
+        }
+    }
+}
